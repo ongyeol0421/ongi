@@ -1,0 +1,87 @@
+{
+  "exportedAt": "2026-05-05T07:45:47.715Z",
+  "session": 2,
+  "broadcastDate": "2026.05.05",
+  "totalDrops": 60,
+  "bloomCount": 2,
+  "elapsedMin": 0,
+  "viewers": {
+    "Ermo": 1,
+    "푸른딩딩": 1,
+    "나랑나무랑": 3,
+    "비행 소녀": 44,
+    "내 이름은 파랑": 10,
+    "익명": 1
+  },
+  "gaonUsers": {},
+  "kodex": [
+    {
+      "stage": "잔온",
+      "name": "가느온",
+      "word": "가느다란 온기가 손끝을 간지럽힌다",
+      "contributor": "비행 소녀",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "온기",
+      "name": "온머금",
+      "word": "말하지 않아도 머금어 온 온기",
+      "contributor": "내 이름은 파랑",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    }
+  ],
+  "allKodex": [
+    {
+      "stage": "온기",
+      "name": "품온",
+      "word": "품 안에 안기듯 부드럽게 감싸는 온도",
+      "firstContributor": "palantir1204",
+      "firstDate": "2026.05.04",
+      "isBloom": false,
+      "sessions": [
+        1
+      ],
+      "appearances": 1
+    },
+    {
+      "stage": "잔온",
+      "name": "가느온",
+      "word": "가느다란 온기가 손끝을 간지럽힌다",
+      "firstContributor": "비행 소녀",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 1
+    },
+    {
+      "stage": "온기",
+      "name": "온머금",
+      "word": "말하지 않아도 머금어 온 온기",
+      "firstContributor": "내 이름은 파랑",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 1
+    }
+  ],
+  "miracleFlowers": [
+    "온기심",
+    "온기결",
+    "온기빛",
+    "온기숨",
+    "온기림",
+    "온결락",
+    "새온결",
+    "온결빛",
+    "온결숨",
+    "온결심"
+  ]
+}
