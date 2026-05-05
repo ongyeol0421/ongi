@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>🌿 온기 가득 온실 — 시청자 조회</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100vh;background:linear-gradient(135deg,#fff5f8 0%,#fff8f2 100%);font-family:'Noto Sans KR',sans-serif;color:#2d2530;}
+.top-bar{background:rgba(255,255,255,.85);border-bottom:1px solid rgba(212,83,126,.15);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px);}
+.logo{font-size:16px;font-weight:800;color:#c04070;}
+.logo small{font-size:11px;font-weight:400;color:rgba(80,60,70,.5);margin-left:6px;}
+.updated{font-size:11px;color:rgba(80,60,70,.4);}
+.container{max-width:680px;margin:0 auto;padding:20px 16px;}
+
+/* 탭 */
+.tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap;}
+.tab-btn{padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;border:1.5px solid rgba(212,83,126,.25);background:white;color:rgba(80,60,70,.6);cursor:pointer;transition:all .15s;}
+.tab-btn.active{background:#D4537E;color:white;border-color:#D4537E;}
+
+/* 검색 */
+.search-box{background:white;border:1.5px solid rgba(212,83,126,.25);border-radius:14px;padding:10px 14px;display:flex;gap:8px;margin-bottom:20px;align-items:center;}
+.search-box input{flex:1;border:none;outline:none;font-size:14px;font-family:inherit;background:transparent;}
+.search-box button{background:#D4537E;color:white;border:none;border-radius:9px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;}
+
+/* 카드 */
+.card{background:white;border:1px solid rgba(212,83,126,.12);border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 2px 12px rgba(180,120,140,.07);}
+.card-title{font-size:13px;font-weight:800;color:#c04070;margin-bottom:12px;}
+
+/* 통계 */
+.stats-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;}
+.stat-box{flex:1;min-width:80px;background:rgba(255,248,244,.8);border:1px solid rgba(212,83,126,.15);border-radius:12px;padding:10px;text-align:center;}
+.stat-val{font-size:22px;font-weight:900;color:#c04070;line-height:1;}
+.stat-label{font-size:10px;color:rgba(80,60,70,.5);margin-top:3px;}
+
+/* 도감 아이템 */
+.kodex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;}
+.kodex-item{border-radius:12px;padding:10px;text-align:center;border:1.5px solid transparent;}
+.kodex-item.잔온{background:rgba(160,155,148,.1);border-color:rgba(160,155,148,.25);}
+.kodex-item.온기{background:rgba(212,83,126,.08);border-color:rgba(212,83,126,.22);}
+.kodex-item.여운{background:rgba(29,158,117,.08);border-color:rgba(29,158,117,.22);}
+.kodex-item.맺힘{background:rgba(127,119,221,.1);border-color:rgba(127,119,221,.28);}
+.kodex-item.개화{background:rgba(255,246,214,.9);border-color:rgba(239,159,39,.35);}
+.kodex-stage{font-size:9px;font-weight:700;letter-spacing:.06em;margin-bottom:3px;}
+.kodex-stage.잔온{color:rgba(160,155,148,.8);}
+.kodex-stage.온기{color:#c04070;}
+.kodex-stage.여운{color:#0a7a55;}
+.kodex-stage.맺힘{color:#5148b0;}
+.kodex-stage.개화{color:#a06000;}
+.kodex-name{font-size:13px;font-weight:700;color:#2d2530;margin-bottom:2px;}
+.kodex-word{font-size:10px;color:rgba(80,60,70,.5);line-height:1.5;}
+.kodex-who{font-size:10px;color:rgba(80,60,70,.38);margin-top:4px;}
+
+/* 가온온실 */
+.gaon-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.gaon-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,rgba(212,83,126,.2),rgba(239,159,39,.15));display:flex;align-items:center;justify-content:center;font-size:22px;}
+.gaon-name{font-size:16px;font-weight:800;color:#2d2530;}
+.gaon-sub{font-size:11px;color:rgba(80,60,70,.45);}
+.gaon-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
+.gaon-stat{background:rgba(255,248,244,.8);border:1px solid rgba(212,83,126,.12);border-radius:10px;padding:9px;text-align:center;}
+.gaon-stat-val{font-size:18px;font-weight:800;color:#c04070;}
+.gaon-stat-label{font-size:10px;color:rgba(80,60,70,.45);}
+.title-chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;}
+.title-chip{background:rgba(212,83,126,.1);border:1px solid rgba(212,83,126,.22);border-radius:100px;padding:3px 10px;font-size:11px;color:#c04070;font-weight:600;}
+.miracle-list{display:flex;flex-direction:column;gap:6px;}
+.miracle-item{background:rgba(255,246,214,.7);border:1px solid rgba(239,159,39,.3);border-radius:10px;padding:8px 10px;font-size:12px;}
+.miracle-item .mi-name{font-weight:700;color:#a06000;}
+.miracle-item .mi-word{color:rgba(80,60,70,.55);font-size:11px;}
+
+/* 순위 */
+.rank-list{display:flex;flex-direction:column;gap:6px;}
+.rank-item{display:flex;align-items:center;gap:10px;background:rgba(255,248,244,.7);border:1px solid rgba(212,83,126,.12);border-radius:10px;padding:9px 12px;}
+.rank-num{font-size:13px;font-weight:800;color:#c04070;width:22px;text-align:center;}
+.rank-num.top{color:#a06000;}
+.rank-name{flex:1;font-size:13px;font-weight:600;}
+.rank-drops{font-size:12px;color:rgba(80,60,70,.5);}
+
+/* 빈 상태 */
+.empty{text-align:center;padding:40px 20px;color:rgba(80,60,70,.4);font-size:13px;line-height:2;}
+
+/* 오류 */
+.error-box{background:rgba(255,235,235,.8);border:1px solid rgba(200,80,80,.25);border-radius:14px;padding:20px;text-align:center;color:rgba(150,50,50,.8);}
+
+@media(max-width:480px){
+  .kodex-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-row{gap:6px;}
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="logo">🌿 온기 가득 온실<small>시청자 조회</small></div>
+  <div class="updated" id="updated-text">불러오는 중...</div>
+</div>
+
+<div class="container">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('kodex')">🌸 이번 방송 도감</button>
+    <button class="tab-btn" onclick="switchTab('all')">📚 전체 도감</button>
+    <button class="tab-btn" onclick="switchTab('rank')">🏆 순위</button>
+    <button class="tab-btn" onclick="switchTab('gaon')">🌿 내 가온 온실</button>
+  </div>
+
+  <!-- 이번 방송 도감 -->
+  <div id="tab-kodex">
+    <div class="card">
+      <div class="card-title">🌸 이번 방송에서 피어난 꽃</div>
+      <div id="kodex-list"><div class="empty">불러오는 중...</div></div>
+    </div>
+  </div>
+
+  <!-- 전체 도감 -->
+  <div id="tab-all" style="display:none;">
+    <div class="card">
+      <div class="card-title">📚 온기 온실 전체 도감</div>
+      <div id="all-list"><div class="empty">불러오는 중...</div></div>
+    </div>
+  </div>
+
+  <!-- 순위 -->
+  <div id="tab-rank" style="display:none;">
+    <div class="card">
+      <div class="card-title">🏆 누적 온방울 순위</div>
+      <div id="rank-list"><div class="empty">불러오는 중...</div></div>
+    </div>
+  </div>
+
+  <!-- 가온온실 -->
+  <div id="tab-gaon" style="display:none;">
+    <div class="search-box">
+      <input type="text" id="gaon-search" placeholder="닉네임을 입력하세요" autocomplete="off"
+        onkeydown="if(event.key==='Enter')searchGaon()"/>
+      <button onclick="searchGaon()">조회</button>
+    </div>
+    <div id="gaon-result"><div class="empty">💧 닉네임을 입력하면<br>가온 온실을 조회할 수 있어요.</div></div>
+  </div>
+</div>
+
+<script>
+let DATA = null;
+
+async function loadData(){
+  try{
+    const r = await fetch('data.json?t='+Date.now());
+    if(!r.ok) throw new Error('data.json 없음');
+    DATA = await r.json();
+    const updated = DATA.exportedAt ? new Date(DATA.exportedAt).toLocaleString('ko-KR',{month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '—';
+    document.getElementById('updated-text').textContent = updated+' 기준';
+    renderAll();
+  }catch(e){
+    document.getElementById('updated-text').textContent = '데이터 없음';
+    ['kodex-list','all-list','rank-list'].forEach(id=>{
+      const el=document.getElementById(id);
+      if(el) el.innerHTML='<div class="error-box">📭 아직 데이터가 없어요.<br>방송 종료 후 업로드되면 볼 수 있어요.</div>';
+    });
+  }
+}
+
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+
+function switchTab(name){
+  ['kodex','all','rank','gaon'].forEach(t=>{
+    document.getElementById('tab-'+t).style.display = t===name?'block':'none';
+    document.querySelector(`.tab-btn:nth-child(${['kodex','all','rank','gaon'].indexOf(t)+1})`).classList.toggle('active',t===name);
+  });
+}
+
+function stageIcon(stage){
+  return {잔온:'🌱',온기:'🌸',여운:'🌿',맺힘:'💜',개화:'🌟'}[stage]||'🌸';
+}
+
+function renderKodex(){
+  const el = document.getElementById('kodex-list');
+  const list = DATA?.kodex||[];
+  if(!list.length){el.innerHTML='<div class="empty">이번 방송에서 아직 피어난 꽃이 없어요 🌱</div>';return;}
+  el.innerHTML='<div class="kodex-grid">'+list.map(k=>`
+    <div class="kodex-item ${esc(k.stage)}">
+      <div class="kodex-stage ${esc(k.stage)}">${stageIcon(k.stage)} ${esc(k.stage)}</div>
+      <div class="kodex-name">${esc(k.name)}</div>
+      <div class="kodex-word">"${esc(k.word)}"</div>
+      <div class="kodex-who">🎲 ${esc(k.contributor||'익명')}님</div>
+    </div>`).join('')+'</div>';
+}
+
+function renderAllKodex(){
+  const el = document.getElementById('all-list');
+  const list = DATA?.allKodex||[];
+  if(!list.length){el.innerHTML='<div class="empty">아직 전체 도감에 기록된 꽃이 없어요 🌱</div>';return;}
+  // 회차별 그룹
+  const bySession = {};
+  list.forEach(k=>{
+    const s = k.session||1;
+    if(!bySession[s]) bySession[s]=[];
+    bySession[s].push(k);
+  });
+  el.innerHTML = Object.entries(bySession).sort((a,b)=>b[0]-a[0]).map(([s,items])=>`
+    <div style="margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:700;color:rgba(80,60,70,.45);margin-bottom:8px;letter-spacing:.06em;">${s}회차</div>
+      <div class="kodex-grid">${items.map(k=>`
+        <div class="kodex-item ${esc(k.stage)}">
+          <div class="kodex-stage ${esc(k.stage)}">${stageIcon(k.stage)} ${esc(k.stage)}</div>
+          <div class="kodex-name">${esc(k.name)}</div>
+          <div class="kodex-word">"${esc(k.word)}"</div>
+          <div class="kodex-who">🎲 ${esc(k.contributor||'익명')}님</div>
+        </div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+function renderRank(){
+  const el = document.getElementById('rank-list');
+  const viewers = DATA?.viewers||{};
+  const sorted = Object.entries(viewers).sort((a,b)=>b[1]-a[1]);
+  if(!sorted.length){el.innerHTML='<div class="empty">아직 후원 기록이 없어요 💧</div>';return;}
+  el.innerHTML='<div class="rank-list">'+sorted.slice(0,30).map(([name,drops],i)=>`
+    <div class="rank-item">
+      <div class="rank-num ${i<3?'top':''}">${i===0?'👑':i===1?'🥈':i===2?'🥉':i+1}</div>
+      <div class="rank-name">${esc(name)}</div>
+      <div class="rank-drops">💧 ${drops}개</div>
+    </div>`).join('')+'</div>';
+}
+
+function searchGaon(){
+  const name = document.getElementById('gaon-search').value.trim();
+  if(!name) return;
+  if(!DATA){ document.getElementById('gaon-result').innerHTML='<div class="error-box">데이터를 불러오는 중이에요. 잠시 후 다시 시도해주세요.</div>'; return; }
+  const viewers = DATA.viewers||{};
+  const gaonUsers = DATA.gaonUsers||{};
+  const drops = viewers[name]||0;
+  const user = gaonUsers[name]||{};
+  const flowers = user.flowers||[];
+  const titles = user.titles||[];
+  const points = user.fun?.points||0;
+
+  if(!drops && !flowers.length){
+    document.getElementById('gaon-result').innerHTML=`<div class="card"><div class="empty">🌱 <b>${esc(name)}</b>님의 기록이 없어요.<br>닉네임이 정확한지 확인해주세요.</div></div>`;
+    return;
+  }
+
+  const sorted = Object.entries(viewers).sort((a,b)=>b[1]-a[1]);
+  const rank = sorted.findIndex(([n])=>n===name)+1;
+
+  document.getElementById('gaon-result').innerHTML=`
+    <div class="card">
+      <div class="gaon-header">
+        <div class="gaon-avatar">🌿</div>
+        <div>
+          <div class="gaon-name">${esc(name)}</div>
+          <div class="gaon-sub">가온 온실 조회</div>
+        </div>
+      </div>
+      ${titles.length?`<div class="title-chips">${titles.map(t=>`<span class="title-chip">${esc(t)}</span>`).join('')}</div>`:''}
+      <div class="gaon-stats">
+        <div class="gaon-stat"><div class="gaon-stat-val">💧 ${drops}</div><div class="gaon-stat-label">누적 온방울</div></div>
+        <div class="gaon-stat"><div class="gaon-stat-val">${rank?rank+'위':'—'}</div><div class="gaon-stat-label">전체 순위</div></div>
+        <div class="gaon-stat"><div class="gaon-stat-val">🌸 ${flowers.length}</div><div class="gaon-stat-label">피운 꽃</div></div>
+        <div class="gaon-stat"><div class="gaon-stat-val">✨ ${points}</div><div class="gaon-stat-label">온기 포인트</div></div>
+      </div>
+      ${flowers.length?`
+        <div style="font-size:11px;font-weight:700;color:rgba(80,60,70,.45);margin-bottom:8px;">🌸 피운 꽃</div>
+        <div class="miracle-list">${flowers.map(f=>`
+          <div class="miracle-item">
+            <div class="mi-name">${stageIcon(f.stage)} ${esc(f.name)}</div>
+            <div class="mi-word">"${esc(f.word)}" · ${esc(f.stage)} 등급</div>
+          </div>`).join('')}
+        </div>`:'<div style="font-size:12px;color:rgba(80,60,70,.4);text-align:center;padding:12px 0;">아직 피운 꽃이 없어요 🌱</div>'}
+    </div>`;
+}
+
+function renderAll(){
+  renderKodex();
+  renderAllKodex();
+  renderRank();
+}
+
+loadData();
+</script>
+</body>
+</html>
