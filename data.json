@@ -1,181 +1,78 @@
 {
-  "exportedAt": "2026-05-06T00:55:00.148Z",
-  "session": 2,
-  "broadcastDate": "2026.05.05",
-  "totalDrops": 1425,
-  "bloomCount": 57,
+  "exportedAt": "2026-05-06T08:22:28.957Z",
+  "session": 3,
+  "broadcastDate": "2026.05.06",
+  "totalDrops": 212,
+  "bloomCount": 8,
   "elapsedMin": 0,
   "viewers": {
-    "Ermo": 282,
-    "푸른딩딩": 101,
-    "나랑나무랑": 73,
-    "비행 소녀": 144,
-    "내 이름은 파랑": 100,
-    "익명": 725
+    "도백9385": 1,
+    "ㅛㅕ": 211
   },
   "gaonUsers": {},
   "kodex": [
     {
       "stage": "잔온",
-      "name": "가느온",
-      "word": "가느다란 온기가 손끝을 간지럽힌다",
-      "contributor": "비행 소녀",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "온기",
-      "name": "온머금",
-      "word": "말하지 않아도 머금어 온 온기",
-      "contributor": "내 이름은 파랑",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "온기",
-      "name": "미온결",
-      "word": "손끝에서 시작된 따뜻함이 결을 따라 퍼진다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "잔온",
       "name": "잔숨",
       "word": "사라지지 않으려 조용히 남은 온기",
-      "contributor": "익명",
-      "date": "2026.05.05",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
       "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "맺힘",
-      "name": "맺은숨",
-      "word": "참아온 것들이 마침내 꽃으로 맺힌다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "개화",
-      "name": "만개온",
-      "word": "온기가 만개하여 세상 가득 퍼져나간다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": true,
-      "session": 2
+      "session": 3
     },
     {
       "stage": "잔온",
       "name": "여린숨",
       "word": "아직 이름 없는 감정이 살며시 숨을 쉰다",
-      "contributor": "익명",
-      "date": "2026.05.05",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
       "isBloom": false,
-      "session": 2
+      "session": 3
     },
     {
       "stage": "온기",
       "name": "온빛살",
       "word": "온기가 빛살처럼 스며들어 환해진다",
-      "contributor": "익명",
-      "date": "2026.05.05",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
       "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "잔온",
-      "name": "새벽결",
-      "word": "새벽 공기처럼 찬듯 따뜻한 첫 숨결",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "맺힘",
-      "name": "맺힌빛",
-      "word": "빛이 한 점에 맺혀 떨고 있다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "온기",
-      "name": "품온",
-      "word": "품 안에 안기듯 부드럽게 감싸는 온도",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "여운",
-      "name": "남은결",
-      "word": "기억이 흩어진 후에도 결만 남는다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
+      "session": 3
     },
     {
       "stage": "여운",
       "name": "긴온기",
       "word": "길게 이어진 온기가 여운으로 피어난다",
-      "contributor": "익명",
-      "date": "2026.05.05",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
       "isBloom": false,
-      "session": 2
+      "session": 3
+    },
+    {
+      "stage": "잔온",
+      "name": "새벽결",
+      "word": "새벽 공기처럼 찬듯 따뜻한 첫 숨결",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
+      "isBloom": false,
+      "session": 3
+    },
+    {
+      "stage": "온기",
+      "name": "품온",
+      "word": "품 안에 안기듯 부드럽게 감싸는 온도",
+      "contributor": "ㅛㅕ",
+      "date": "2026.05.06",
+      "isBloom": false,
+      "session": 3
     },
     {
       "stage": "여운",
-      "name": "머문결",
-      "word": "지나간 자리에 남아 오래 흔들리는 결",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "맺힘",
-      "name": "숨고임",
-      "word": "숨이 멎을 듯 고인 감정이 맺히다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": false,
-      "session": 2
-    },
-    {
-      "stage": "개화",
-      "name": "온결",
-      "word": "온결이 모든 결을 따뜻하게 감싸 안는다",
-      "contributor": "익명",
-      "date": "2026.05.05",
-      "isBloom": true,
-      "session": 2
-    },
-    {
-      "stage": "개화",
-      "name": "터온",
-      "word": "오래 품어온 온기가 마침내 터져 피어난다",
-      "contributor": "비행 소녀",
+      "name": "잔향온",
+      "word": "향기처럼 남아 오래도록 머무는 온도",
+      "contributor": "ㅛㅕ",
       "date": "2026.05.06",
-      "isBloom": true,
-      "session": 2
-    },
-    {
-      "stage": "개화",
-      "name": "피온",
-      "word": "피어나는 순간, 그 온기가 전부였다",
-      "contributor": "나랑나무랑",
-      "date": "2026.05.06",
-      "isBloom": true,
-      "session": 2
+      "isBloom": false,
+      "session": 3
     }
   ],
   "allKodex": [
@@ -188,9 +85,10 @@
       "isBloom": false,
       "sessions": [
         1,
-        2
+        2,
+        3
       ],
-      "appearances": 6
+      "appearances": 7
     },
     {
       "stage": "잔온",
@@ -202,7 +100,7 @@
       "sessions": [
         2
       ],
-      "appearances": 4
+      "appearances": 5
     },
     {
       "stage": "온기",
@@ -236,9 +134,10 @@
       "firstDate": "2026.05.05",
       "isBloom": false,
       "sessions": [
-        2
+        2,
+        3
       ],
-      "appearances": 9
+      "appearances": 10
     },
     {
       "stage": "맺힘",
@@ -272,9 +171,10 @@
       "firstDate": "2026.05.05",
       "isBloom": false,
       "sessions": [
-        2
+        2,
+        3
       ],
-      "appearances": 3
+      "appearances": 6
     },
     {
       "stage": "온기",
@@ -284,9 +184,10 @@
       "firstDate": "2026.05.05",
       "isBloom": false,
       "sessions": [
-        2
+        2,
+        3
       ],
-      "appearances": 4
+      "appearances": 5
     },
     {
       "stage": "잔온",
@@ -296,9 +197,10 @@
       "firstDate": "2026.05.05",
       "isBloom": false,
       "sessions": [
-        2
+        2,
+        3
       ],
-      "appearances": 4
+      "appearances": 6
     },
     {
       "stage": "맺힘",
@@ -332,9 +234,10 @@
       "firstDate": "2026.05.05",
       "isBloom": false,
       "sessions": [
-        2
+        2,
+        3
       ],
-      "appearances": 2
+      "appearances": 4
     },
     {
       "stage": "여운",
@@ -358,7 +261,7 @@
       "sessions": [
         2
       ],
-      "appearances": 3
+      "appearances": 4
     },
     {
       "stage": "개화",
@@ -394,7 +297,19 @@
       "sessions": [
         2
       ],
-      "appearances": 3
+      "appearances": 2
+    },
+    {
+      "stage": "여운",
+      "name": "잔향온",
+      "word": "향기처럼 남아 오래도록 머무는 온도",
+      "firstContributor": "ㅛㅕ",
+      "firstDate": "2026.05.06",
+      "isBloom": false,
+      "sessions": [
+        3
+      ],
+      "appearances": 1
     }
   ],
   "miracleFlowers": [
