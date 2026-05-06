@@ -1,17 +1,17 @@
 {
-  "exportedAt": "2026-05-05T07:45:47.715Z",
+  "exportedAt": "2026-05-06T00:47:57.199Z",
   "session": 2,
   "broadcastDate": "2026.05.05",
-  "totalDrops": 60,
-  "bloomCount": 2,
+  "totalDrops": 1425,
+  "bloomCount": 57,
   "elapsedMin": 0,
   "viewers": {
-    "Ermo": 1,
-    "푸른딩딩": 1,
-    "나랑나무랑": 3,
-    "비행 소녀": 44,
-    "내 이름은 파랑": 10,
-    "익명": 1
+    "Ermo": 282,
+    "푸른딩딩": 101,
+    "나랑나무랑": 73,
+    "비행 소녀": 144,
+    "내 이름은 파랑": 100,
+    "익명": 725
   },
   "gaonUsers": {},
   "kodex": [
@@ -32,6 +32,150 @@
       "date": "2026.05.05",
       "isBloom": false,
       "session": 2
+    },
+    {
+      "stage": "온기",
+      "name": "미온결",
+      "word": "손끝에서 시작된 따뜻함이 결을 따라 퍼진다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "잔온",
+      "name": "잔숨",
+      "word": "사라지지 않으려 조용히 남은 온기",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "맺힘",
+      "name": "맺은숨",
+      "word": "참아온 것들이 마침내 꽃으로 맺힌다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "개화",
+      "name": "만개온",
+      "word": "온기가 만개하여 세상 가득 퍼져나간다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": true,
+      "session": 2
+    },
+    {
+      "stage": "잔온",
+      "name": "여린숨",
+      "word": "아직 이름 없는 감정이 살며시 숨을 쉰다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "온기",
+      "name": "온빛살",
+      "word": "온기가 빛살처럼 스며들어 환해진다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "잔온",
+      "name": "새벽결",
+      "word": "새벽 공기처럼 찬듯 따뜻한 첫 숨결",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "맺힘",
+      "name": "맺힌빛",
+      "word": "빛이 한 점에 맺혀 떨고 있다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "온기",
+      "name": "품온",
+      "word": "품 안에 안기듯 부드럽게 감싸는 온도",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "여운",
+      "name": "남은결",
+      "word": "기억이 흩어진 후에도 결만 남는다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "여운",
+      "name": "긴온기",
+      "word": "길게 이어진 온기가 여운으로 피어난다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "여운",
+      "name": "머문결",
+      "word": "지나간 자리에 남아 오래 흔들리는 결",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "맺힘",
+      "name": "숨고임",
+      "word": "숨이 멎을 듯 고인 감정이 맺히다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": false,
+      "session": 2
+    },
+    {
+      "stage": "개화",
+      "name": "온결",
+      "word": "온결이 모든 결을 따뜻하게 감싸 안는다",
+      "contributor": "익명",
+      "date": "2026.05.05",
+      "isBloom": true,
+      "session": 2
+    },
+    {
+      "stage": "개화",
+      "name": "터온",
+      "word": "오래 품어온 온기가 마침내 터져 피어난다",
+      "contributor": "비행 소녀",
+      "date": "2026.05.06",
+      "isBloom": true,
+      "session": 2
+    },
+    {
+      "stage": "개화",
+      "name": "피온",
+      "word": "피어나는 순간, 그 온기가 전부였다",
+      "contributor": "나랑나무랑",
+      "date": "2026.05.06",
+      "isBloom": true,
+      "session": 2
     }
   ],
   "allKodex": [
@@ -43,9 +187,10 @@
       "firstDate": "2026.05.04",
       "isBloom": false,
       "sessions": [
-        1
+        1,
+        2
       ],
-      "appearances": 1
+      "appearances": 6
     },
     {
       "stage": "잔온",
@@ -57,7 +202,7 @@
       "sessions": [
         2
       ],
-      "appearances": 1
+      "appearances": 4
     },
     {
       "stage": "온기",
@@ -69,7 +214,187 @@
       "sessions": [
         2
       ],
+      "appearances": 3
+    },
+    {
+      "stage": "온기",
+      "name": "미온결",
+      "word": "손끝에서 시작된 따뜻함이 결을 따라 퍼진다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 5
+    },
+    {
+      "stage": "잔온",
+      "name": "잔숨",
+      "word": "사라지지 않으려 조용히 남은 온기",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 9
+    },
+    {
+      "stage": "맺힘",
+      "name": "맺은숨",
+      "word": "참아온 것들이 마침내 꽃으로 맺힌다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 2
+    },
+    {
+      "stage": "개화",
+      "name": "만개온",
+      "word": "온기가 만개하여 세상 가득 퍼져나간다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": true,
+      "sessions": [
+        2
+      ],
       "appearances": 1
+    },
+    {
+      "stage": "잔온",
+      "name": "여린숨",
+      "word": "아직 이름 없는 감정이 살며시 숨을 쉰다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 3
+    },
+    {
+      "stage": "온기",
+      "name": "온빛살",
+      "word": "온기가 빛살처럼 스며들어 환해진다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 4
+    },
+    {
+      "stage": "잔온",
+      "name": "새벽결",
+      "word": "새벽 공기처럼 찬듯 따뜻한 첫 숨결",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 4
+    },
+    {
+      "stage": "맺힘",
+      "name": "맺힌빛",
+      "word": "빛이 한 점에 맺혀 떨고 있다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 2
+    },
+    {
+      "stage": "여운",
+      "name": "남은결",
+      "word": "기억이 흩어진 후에도 결만 남는다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 4
+    },
+    {
+      "stage": "여운",
+      "name": "긴온기",
+      "word": "길게 이어진 온기가 여운으로 피어난다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 2
+    },
+    {
+      "stage": "여운",
+      "name": "머문결",
+      "word": "지나간 자리에 남아 오래 흔들리는 결",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 1
+    },
+    {
+      "stage": "맺힘",
+      "name": "숨고임",
+      "word": "숨이 멎을 듯 고인 감정이 맺히다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": false,
+      "sessions": [
+        2
+      ],
+      "appearances": 3
+    },
+    {
+      "stage": "개화",
+      "name": "온결",
+      "word": "온결이 모든 결을 따뜻하게 감싸 안는다",
+      "firstContributor": "익명",
+      "firstDate": "2026.05.05",
+      "isBloom": true,
+      "sessions": [
+        2
+      ],
+      "appearances": 1
+    },
+    {
+      "stage": "개화",
+      "name": "터온",
+      "word": "오래 품어온 온기가 마침내 터져 피어난다",
+      "firstContributor": "비행 소녀",
+      "firstDate": "2026.05.06",
+      "isBloom": true,
+      "sessions": [
+        2
+      ],
+      "appearances": 1
+    },
+    {
+      "stage": "개화",
+      "name": "피온",
+      "word": "피어나는 순간, 그 온기가 전부였다",
+      "firstContributor": "나랑나무랑",
+      "firstDate": "2026.05.06",
+      "isBloom": true,
+      "sessions": [
+        2
+      ],
+      "appearances": 3
     }
   ],
   "miracleFlowers": [
